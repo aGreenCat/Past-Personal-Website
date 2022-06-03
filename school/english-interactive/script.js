@@ -19,5 +19,10 @@ interact('.draggable').draggable({
             event.target.style.transform =
                 `translate(${position.x}px, ${position.y}px)`
         },
-    }
+    },
+    modifiers: [
+        interact.modifiers.restrictRect({
+          restriction: 'parent'
+        })
+      ]
 })
