@@ -67,7 +67,7 @@ function draw() {
   fill(0);
   rect(30, 30, 60, 60, 5);
   fill(255);
-  text(page, 60, 60);
+  text(turn, 60, 60);
 }
 
 const render = [
